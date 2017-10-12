@@ -1,0 +1,136 @@
+/*This is the CSS presentation of MY Personal Website*/
+
+/*@Jurgen: Your feedback from last time was DRY, I tried to apply that here. Did I do that or do you still see some doubles?*/
+
+nav {
+	width: 100%;
+	background-color: #5E565C;
+	margin: 0px; 
+}
+
+header {
+	width: 100%;
+	font-family: Neucha;
+	font-size: 30px;
+	font-weight: bold;
+	color: #F0D5E2;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	background-color: #F0D5E2;
+	border: solid;
+	border-color: #5E565C;
+	border-radius: 10%;
+	font-family: Open Sans;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.index{
+	text-decoration: none;
+}
+
+ul {
+	margin-bottom: 0px;
+}
+
+
+h1 {
+	height: 160px;
+	padding: 40px;
+	background-image: url("images/artforheader.jpg");
+	font-family: Neucha;
+	color: #5E565C;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.infoblock{
+	background-color: #F0D5E2;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+}
+
+h2 {
+	font-family: Neucha;
+	color: #5E565C;
+}
+
+p {
+	width: 80%;
+	font-family: Open Sans;
+	color: #5E565C;
+}
+
+.fotolau{
+	width: 15%;
+	float: right; 
+	border-radius: 20%;
+	margin-left: 20px;
+}
+
+/* @Jurgen: a QUESTION: i'm not getting the best way to put fotolau next to the text and letting it resize in different viewports. 
+Right now I put it in my html as a childrens thing. I also tries other solutions (fe. a div in a div) but nothing seems to work 
+Any tips? */
+/*@media (max-width: 600px) {
+    .fotolau {
+        width: 100%;
+   }
+}*/
+
+.h2pink{
+	font-family: Open Sans;
+	font-size: 12px;
+	color: #F0D5E2;
+	text-align: center;
+	background-color: #5E565C;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	margin: 0px;
+}
+
+/* tree equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding-left: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout for three columns instead of four */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout for stacking the two columns on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+   }
+}
+
+
+
